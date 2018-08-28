@@ -1,0 +1,37 @@
+/* ========== SCORE PARTIAL FILE ========== */
+
+/* 
+ * Contains the CSS rules for setting up the score
+*/
+
+.score-group {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+
+    .team-left, .team-right {
+        text-align: center;
+
+        h3 {
+            font-weight: normal;
+            font-size: $font-size-s;
+            margin-bottom: 5px;
+        }
+
+        .score {
+            font-size: $font-size-xl;
+            margin: 0;
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 20px;
+        height: 1px;
+        background-color: rgba(112, 112, 112, 0.5);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, calc(-50% + 37px));
+    }
+}

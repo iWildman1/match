@@ -1,0 +1,26 @@
+/* ========== NAVBAR PARTIAL FILE ========== */
+
+/* 
+ * Contains the SCSS code for setting up the
+ * navigation bar.
+*/
+
+.navbar {
+    background-color: $color-white;
+    padding: 20px 0px;
+    -webkit-box-shadow: 8px 10px 23px 2px rgba(0,0,0,0.09);
+    -moz-box-shadow: 8px 10px 23px 2px rgba(0,0,0,0.09);
+    box-shadow: 8px 10px 23px 2px rgba(0,0,0,0.09);
+
+    .navbar-container {
+        width: 80%;
+        margin: 0 auto;
+
+        a {
+            font-size: $font-size-l;
+            text-decoration: none;
+            color: $color-dark-grey;
+            
+        }
+    }
+}

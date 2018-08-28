@@ -1,0 +1,45 @@
+.team-info-modal {
+    display: none;
+}
+
+body {
+    &.modal-active {
+
+        .team-info-modal {
+            display: block;
+            position: fixed;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            width: 70%;
+            padding: 30px;
+        }
+
+        .team-modal-inner {
+            display: flex;
+
+            .team-modal-half {
+                flex: 0 0 calc(50% - 30px);
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+        }
+
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            z-index: 1;
+            opacity: 0.6;
+        }
+    }
+}
+

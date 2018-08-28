@@ -1,0 +1,46 @@
+/* ========== BUTTON PARTIAL FILE ========== */
+
+/* 
+ * Contains the CSS rules for setting up the button
+*/
+
+.button {
+    font-size: $font-size-xs;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-grey;
+    text-decoration: none;
+    border: 1px solid rgba(112, 112, 112, 0.41);
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+
+    &.push-to-bottom {
+        position: absolute;
+        bottom: 10px;
+        width: calc(100% - 40px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+#fire-graphic {
+    margin-top: 6px;
+}
+
+.score-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 40px);
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .button {
+        flex: 0 0 calc(50% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

@@ -1,0 +1,51 @@
+/* ========== SWITCH TOGGLE PARTIAL FILE ========== */
+
+/* 
+ * Contains the CSS rules for setting up the switch toggle
+*/
+
+.switch-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        font-size: $font-size-s;
+        margin: 15px 0;
+    }
+
+    .switch-toggle {
+        width: 50px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+
+        .toggle-activate {
+            height: 100%;
+            width: 75%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $color-green;
+        }
+
+        .toggle-deactivate {
+            height: 100%;
+            width: 25%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: $color-red;
+        }
+
+        &.toggle-off {
+            .toggle-activate {
+                width: 25%;
+            }
+
+            .toggle-deactivate {
+                width: 75%;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+/* ========== TEXT INPUT PARTIAL FILE ========== */
+
+/* 
+ * Contains the CSS rules for setting up text inputs
+*/
+
+.text-input {
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.41);
+    font-size: $font-size-s;
+    margin-bottom: 10px;
+    color: $color-grey;
+}

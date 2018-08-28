@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Match - Football Graphic Management System</title>
+    </head>
+    <body class="modal-active">
+        <header>
+            <div class="navbar">
+                <div class="navbar-container">
+                    <div class="brand">
+                        <a href="/">Match.</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="body-container">
+            <section class="tri-grid">
+                <div class="grid-el">
+                    <h2>Score</h2>
+                    <hr>
+                    <div class="switch-group">
+                        <div class="switch-text">
+                            <p>Score Enabled</p>
+                        </div>
+                        <div class="switch-toggle toggle-on" id="score-switch">
+                            <span class="toggle-activate"></span>
+                            <span class="toggle-deactivate"></span>
+                        </div>
+                    </div>
+                    <div class="score-group">
+                        <div class="team-left">
+                            <h3>Team 1</h3>
+                            <p class="score">3</p>
+                        </div>
+                        <div class="team-right">
+                            <h3>Team 2</h3>
+                            <p class="score">0</p>
+                        </div>
+                    </div>
+                    <div class="score-buttons">
+                        <a href="/" class="button" id="update-score-1">Update</a>
+                        <a href="/" class="button" id="update-score-2">Update</a>
+                    </div>
+                    
+                </div>
+                <div class="grid-el">
+                    <h2>Timer</h2>
+                    <hr>
+                    <div class="switch-group">
+                        <div class="switch-text">
+                            <p>Timer Enabled</p>
+                        </div>
+                        <div class="switch-toggle toggle-on" id="timer-switch">
+                            <span class="toggle-activate"></span>
+                            <span class="toggle-deactivate"></span>
+                        </div>
+                    </div>
+                    <a href="/" class="button" id="activate-timer">Activate</a>
+                    <a href="/" class="button" id="deactivate-timer">Deactivate</a>
+                    <div class="timer">
+                        <p>00:00</p>
+                    </div>
+                </div>
+                <div class="grid-el">
+                    <h2>Lower Banner</h2>
+                    <hr>
+                    <div class="switch-group">
+                        <div class="switch-text">
+                            <p>Banner Enabled</p>
+                        </div>
+                        <div class="switch-toggle toggle-on" id="banner-switch">
+                            <span class="toggle-activate"></span>
+                            <span class="toggle-deactivate"></span>
+                        </div>
+                    </div>
+                    <input type="text" class="text-input" id="banner-update-text" placeholder="Update...">
+                    <select class="object-selector" multiple size="4" id="banner-selector">
+
+                    </select>
+                    <a href="/" class="button push-to-bottom" id="update-banner">Update</a>
+                </div>
+            </section>
+            <section class="full-grid">
+                <div class="grid-el">
+                    <h2>Lower Thirds</h2>
+                    <hr>
+                    <div class="el-inner-flex">
+                        <div class="el-half">
+                            <input type="text" class="text-input" id="lt-title" placeholder="Title...">
+                            <select class="object-selector selector-full-height" multiple size="4" id="lt-type-selector">
+                                <option value="goal">Goal</option>
+                                <option value="yellow-card">Yellow Card</option>
+                                <option value="red-card">Red Card</option>
+                            </select>
+                        </div>
+                        <div class="el-half">
+                            <input type="text" class="text-input" id="lt-subtitle" placeholder="Subtitle...">
+                            <input type="text" class="text-input" id="lt-colour" placeholder="Background Color...">
+                            <a href="/" class="button button-lg" id="fire-graphic">Fire Graphic</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="team-info-modal">
+            <div class="team-modal-inner">
+                <div class="team-modal-half">
+                    <input type="text" class="text-input" id="team-1-name" placeholder="Team 1 name...">
+                    <input type="text" class="text-input" id="team-1-acr" placeholder="Team 1 acronym...">
+                </div>
+                <div class="team-modal-half"> 
+                    <input type="text" class="text-input" id="team-2-name" placeholder="Team 2 name...">
+                    <input type="text" class="text-input" id="team-2-acr" placeholder="Team 2 acronym...">
+                </div>
+            </div>
+            <a href="/" class="button" id="start-match-btn">Start Match</a>
+        </div>
+    </body>
+</html>

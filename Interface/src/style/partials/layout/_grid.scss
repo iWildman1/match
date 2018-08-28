@@ -1,0 +1,58 @@
+/* ========== GRID PARTIAL FILE ========== */
+
+/* 
+ * Contains the CSS rules for setting up the layout
+ * grid for the site.
+*/
+
+.body-container {
+    width: 90%;
+    max-width: 960px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tri-grid {
+    display: flex;
+
+    .grid-el {
+        width: calc(33.3333% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    margin-bottom: 40px;
+}
+
+.full-grid {
+    padding: 0;
+    width: calc(100% - 20px );
+    position: relative;
+    left: 10px;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    hr {
+        width: 30% !important;
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+
+    .el-inner-flex {
+        display: flex;
+
+        .el-half {
+            flex: 0 0 calc(50% - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+
+            .text-input {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

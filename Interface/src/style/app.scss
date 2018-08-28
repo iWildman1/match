@@ -1,0 +1,41 @@
+/* ========== SCSS ROOT FILE ========== */
+
+/* 
+ * Main input file. This file is for all partial SCSS files to be
+ * imported into before they are compiled into CSS and processed
+ * for production.
+ */
+
+ /* === UTILITY FILES === */
+
+ @import 'partials/utilities/reset';
+
+ /* === BASE FILES === */
+
+ @import 'partials/base/variables';
+ @import 'partials/base/typography';
+ @import 'partials/base/base';
+
+
+/* === LAYOUT FILES === */
+
+@import 'partials/layout/grid';
+
+
+/* === COMPONENT FILES === */
+
+@import 'partials/components/navbar';
+@import 'partials/components/grid-el';
+@import 'partials/components/switch-toggle';
+@import 'partials/components/score';
+@import 'partials/components/button';
+@import 'partials/components/timer';
+@import 'partials/components/selector';
+@import 'partials/components/text-input';
+@import 'partials/components/text-area';
+@import 'partials/components/team-info-modal';
+
+
+/* === PAGE-SPECIFIC FILES === */
+
+@import 'partials/pages/overlay';
